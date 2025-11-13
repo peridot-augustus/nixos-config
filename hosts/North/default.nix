@@ -21,13 +21,13 @@ Used with multi monitor setup.
   services.hardware.openrgb.enable = true;
 
   # Mount additional drives
-  fileSystems = {
-    "/media/data" = {
-      device = "/dev/disk/by-label/data";
-      fsType = "ext4";
-      options = ["defaults"];
-    };
-  };
+  # fileSystems = {
+  #   "/media/data" = {
+  #     device = "/dev/disk/by-label/data";
+  #     fsType = "ext4";
+  #     options = ["defaults"];
+  #   };
+  # };
 
   # Host specific user packages
   home.packages = [
@@ -39,7 +39,7 @@ Used with multi monitor setup.
   modules = {
     device = {
       cpu = "amd";
-      gpu = "nvidia";
+      gpu = "amd";
       drive = "nvme";
       supportsBrightness = false;
       supportsBluetooth = true;
@@ -48,22 +48,12 @@ Used with multi monitor setup.
           name = "DP-1";
           resolution = "3440x1440";
           position = {
-            x = 2560;
-            y = 0;
-          };
-          refresh_rate = 160;
-          adaptive_sync = true;
-          primary = true;
-        };
-        side = {
-          name = "DP-2";
-          resolution = "2560x1440";
-          position = {
             x = 0;
             y = 0;
           };
-          refresh_rate = 165;
+          refresh_rate = 240;
           adaptive_sync = true;
+          primary = true;
         };
       };
     };
