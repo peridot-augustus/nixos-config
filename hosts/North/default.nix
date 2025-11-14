@@ -71,6 +71,7 @@ Used with multi monitor setup.
     };
     virtualisation.docker.enable = true;
     desktop = {
+      modules.desktop.kde.enable = true;
       labwc.enable = true;
       gaming.enable = true;
       util.mpv.enable = true;
