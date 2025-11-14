@@ -35,7 +35,7 @@
   # default options that apply to all hosts, unless changed
 
   # default timezone
-  time.timeZone = lib.mkDefault "Europe/Amsterdam";
+  time.timeZone = lib.mkDefault "America/Los_Angeles";
 
   # default bootoptions / kernel / modules
   boot = {
