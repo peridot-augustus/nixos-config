@@ -76,7 +76,7 @@
 
   config = {
     user = let
-      defaultUser = "ricardo";
+      defaultUser = "dennis";
       user = builtins.getEnv "USER";
       name =
         if lib.elem user ["" "root"]
