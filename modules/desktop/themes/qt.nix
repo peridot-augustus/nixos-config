@@ -18,7 +18,7 @@ in {
   config = lib.mkIf (qtConfig.enable) {
     qt = {
       enable = true;
-      platformTheme = "gnome";
+      # platformTheme = "gnome";
       style = "adwaita-dark";
     };
   };
